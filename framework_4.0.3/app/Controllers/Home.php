@@ -5,22 +5,31 @@ class Home extends Controller
 {
 	public function index()
 	{
+		function getImgUrlsFromFold($folder)
+		{
+			$base_img_dir = ('assets/img/');
+			$files = scandir($base_img_dir.$folder);
+			$l = array();
+			foreach ($files as $file)
+				$l[$file] = base_url($base_img_dir.$folder.$file);
+			return $l;
+		}
 
-		$header_data = [
-			'title' => "medweb",
-			'menu_items' => ["who", "what", "why"],
-		];
+		$company = "medweb";
+		$logo = base_url('assets/img/logo.svg');
 
 		$content = [
-			'content_blocks' => [
-				['s' => "Who we are", 't' => "Experts in clinical", 'u' => "who"],
-				['s' => "What we do", 't' => "Build solutions around how you work", 'u' => "what"],
-				['s' => "Why we do it", 't' => "Happy, healthy people", 'u' => "why"],
+			"title" => $company,
+			"logo" => $logo,
+			"content_blocks" => [
+				["title" => "Experts in med/web", "desc" => "build experiences between clinics and patients", "img" => getImgUrlsFromFold('content1')],
+				["title" => "Built around your clinic", "desc" => "built around how you work", "img" => getImgUrlsFromFold('content2')],
+				["title" => "Happy, healthy people", "desc" => "The ultimate goal", "img" => getImgUrlsFromFold('content3')],
 			],
 		];
 
-		echo view('templates/header', $header_data);
-		echo view('home', $content);
+		echo view('templates/header', ["title" => $company, "logo" => $logo]);
+		echo view('contents', $content);
 		echo view('templates/footer');
 	}
 }
