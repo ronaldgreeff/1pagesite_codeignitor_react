@@ -28,7 +28,7 @@ class Home extends Controller
 			],
 		];
 
-		echo view('frontend/public/home', $content);
+		echo view('home', $content);
 
 		// see this - https://forum.codeigniter.com/thread-69456-post-362185.html#pid362185
 		// https://blog.cacan.id/codeigniter-3-back-end-react-js-front-end/
