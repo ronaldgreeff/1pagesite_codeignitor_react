@@ -1,9 +1,24 @@
 <?php namespace App\Controllers;
 use CodeIgniter\Controller;
 
+// Allow CORS between localhost:3000 and localhost:8080
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+$method = $_SERVER['REQUEST_METHOD'];
+if($method == "OPTIONS") {
+	die();
+}
+// Remove the above
+
 class Home extends Controller
 {
 	public function index()
+	{
+		return view('home');
+	}
+
+	public function data()
 	{
 		function getImgUrlsFromFold($folder)
 		{
@@ -28,13 +43,7 @@ class Home extends Controller
 			],
 		];
 
-		echo view('home', $content);
-
-		// see this - https://forum.codeigniter.com/thread-69456-post-362185.html#pid362185
-		// https://blog.cacan.id/codeigniter-3-back-end-react-js-front-end/
-
-		// echo view('templates/header', ["title" => $company, "logo" => $logo]);
-		// echo view('contents', $content);
-		// echo view('templates/footer');
+		return $this->response->setJSON($content);
 	}
+
 }

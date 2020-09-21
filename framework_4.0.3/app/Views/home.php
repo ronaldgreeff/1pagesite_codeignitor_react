@@ -10,15 +10,14 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="medweb"
     />
     <title></title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="app"></div>
 
-    <!-- <?= esc($title); ?> -->
-    <script type="text/babel" src="/assets/js_react/src/index.js"></script>
+    <script src="dist/main.js" charset="utf-8"></script>
 
   </body>
 </html>
