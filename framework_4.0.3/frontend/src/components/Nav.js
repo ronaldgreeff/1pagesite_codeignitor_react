@@ -1,14 +1,13 @@
 import React from 'react';
 import LogoName from './LogoName';
+import { makeStyles } from '@material-ui/core/styles';
+import "fontsource-nova-round"
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
 import CallIcon from '@material-ui/icons/Call';
 import EmailIcon from '@material-ui/icons/Email';
-
-import { makeStyles } from '@material-ui/core/styles';
-import "fontsource-nova-round"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +27,7 @@ export default function Nav(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar>
+      <AppBar position="static">
         <Toolbar>
           <Grid container className={classes.gridContainer}>
             <Grid item>
