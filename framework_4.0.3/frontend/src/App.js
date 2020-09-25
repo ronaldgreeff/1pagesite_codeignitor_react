@@ -1,37 +1,42 @@
-import React from 'react';
-import { useQuery, QueryCache, ReactQueryCacheProvider } from 'react-query';
+import React, { useState} from 'react';
+import { useQuery } from 'react-query';
 import { ReactQueryDevtools } from 'react-query-devtools';
 
 import Button from '@material-ui/core/Button';
 
-function Example() {
-  const { isLoading, error, data } = useQuery('initialData', () =>
-    fetch('http://localhost:8080/data').then(res =>
-      res.json()
-    )
-  )
-  console.log('data', data)
+// function GetData(props) {
+//   const { isLoading, error, data } = useQuery('initialData', () =>
+//     fetch('http://localhost:8080/data').then(res =>
+//       res.json()
+//     )
+//   )
+//   if (isLoading) return 'Loading...'
+//   if (error) return 'An error occurred: ' + error.message
+//   return data
+// }
 
-  if (isLoading) return 'Loading...'
+// https://react-query.tanstack.com/docs/guides/initial-query-data
 
-  if (error) return 'An error occurred: ' + error.message
+function App() {
 
   return (
     <div>
-      <h1>{data.title}</h1>
+    p
     </div>
   )
 }
 
-function App() {
-  return (
-    <>
-      <div className="App">
-        <Example />
-      </div>
-      <ReactQueryDevtools />
-    </>
-  );
-}
 
 export default App;
+
+// function App() {
+//   return (
+//     <>
+//       <div className="App">
+//       </div>
+//       <ReactQueryDevtools />
+//     </>
+//   );
+// }
+//
+// export default App;
