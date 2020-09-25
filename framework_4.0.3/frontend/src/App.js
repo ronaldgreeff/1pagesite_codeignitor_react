@@ -12,14 +12,14 @@ export default function App(props) {
 
   const content = props.data.content_blocks.map((cb, i) =>
     <div key={i}>
-      {cb.title}
+      <ContentBlock cb={cb} />
     </div>
   )
 
   return (
     <>
-      <Nav />
-      <Hero />
+      <Nav logo={props.data.logo} title={props.data.title} />
+      <Hero logo={props.data.logo} title={props.data.title} />
       { content }
       <Contact />
     </>

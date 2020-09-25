@@ -1,11 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { useQuery } from 'react-query';
-import { ReactQueryDevtools } from 'react-query-devtools';
+
+import { makeStyles } from '@material-ui/core/styles';
+import 'fontsource-roboto';
 
 import App from './App';
 
+
+const useStyles = makeStyles((theme) => ({
+  body: {
+    fontFamily: "Roboto",
+  }
+}));
+
 function GetData(props) {
+
+  const classes = useStyles();
 
   const {isLoading, data } = useQuery('initialData', () =>
   fetch('http://localhost:8080/data').then(res =>
@@ -14,7 +25,7 @@ function GetData(props) {
   )
 
   return (
-    <div className="App">
+    <div className={classes.body}>
       {isLoading ? (
         <div>Loading...</div>
       ) : (
@@ -22,12 +33,11 @@ function GetData(props) {
       )}
     </div>
   )
-}
+};
 
 ReactDOM.render(
   <React.StrictMode>
     <GetData />
-    <ReactQueryDevtools />
   </React.StrictMode>,
   document.getElementById('app')
 );
