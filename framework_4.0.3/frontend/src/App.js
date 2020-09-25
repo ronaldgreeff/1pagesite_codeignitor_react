@@ -1,42 +1,27 @@
-import React, { useState} from 'react';
-import { useQuery } from 'react-query';
-import { ReactQueryDevtools } from 'react-query-devtools';
+import React from 'react';
 
-import Button from '@material-ui/core/Button';
+import Nav from './components/Nav';
+import Hero from './components/Hero';
+import ContentBlock from './components/ContentBlock';
+import Contact from './components/Contact';
 
-// function GetData(props) {
-//   const { isLoading, error, data } = useQuery('initialData', () =>
-//     fetch('http://localhost:8080/data').then(res =>
-//       res.json()
-//     )
-//   )
-//   if (isLoading) return 'Loading...'
-//   if (error) return 'An error occurred: ' + error.message
-//   return data
-// }
 
-// https://react-query.tanstack.com/docs/guides/initial-query-data
+export default function App(props) {
 
-function App() {
+  console.log(props.data);
 
-  return (
-    <div>
-    p
+  const content = props.data.content_blocks.map((cb, i) =>
+    <div key={i}>
+      {cb.title}
     </div>
   )
-}
 
-
-export default App;
-
-// function App() {
-//   return (
-//     <>
-//       <div className="App">
-//       </div>
-//       <ReactQueryDevtools />
-//     </>
-//   );
-// }
-//
-// export default App;
+  return (
+    <>
+      <Nav />
+      <Hero />
+      { content }
+      <Contact />
+    </>
+  )
+};
