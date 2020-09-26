@@ -1,28 +1,29 @@
 import React from 'react';
-import Block1 from './content_blocks/Block1';
-import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
-import { makeStyles } from '@material-ui/core/styles';
+import Slider from '@farbenmeer/react-spring-slider';
+import ContentBlock from './ContentBlock';
+import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
-
+import { makeStyles } from '@material-ui/core/styles';
+// import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles((theme) => ({
-  slider: {
-    // height: "80vh",
+  contentBox: {
+    height: "100%",
   },
-  currentSlide: {
-    // height: "80%",
-  }
 }));
 
 export default function Carousel(props) {
   const classes = useStyles();
 
+  const contentBlocks = props.slides.map((slide, index) =>
+  <ContentBlock key={index} block_data={props.slides[index]} />)
+
   return (
-    <Container>
-      <Slider>
-        <Block1 block_data={props.slides[0]} />
-        </Slider>
+    <Container className={classes.contentBox}>
+      <Slider
+        hasBullets>
+        {contentBlocks}
+      </Slider>
     </Container>
   )
 }

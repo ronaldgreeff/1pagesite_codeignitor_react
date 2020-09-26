@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { useQuery } from 'react-query';
 
+import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import 'fontsource-roboto';
 
@@ -9,9 +10,6 @@ import App from './App';
 
 
 const useStyles = makeStyles((theme) => ({
-  body: {
-    fontFamily: "Roboto",
-  }
 }));
 
 function GetData(props) {
@@ -25,13 +23,14 @@ function GetData(props) {
   )
 
   return (
-    <div className={classes.body}>
+    <>
+      <CssBaseline />
       {isLoading ? (
         <div>Loading...</div>
       ) : (
         <App data={data} />
       )}
-    </div>
+    </>
   )
 };
 

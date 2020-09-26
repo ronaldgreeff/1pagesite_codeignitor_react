@@ -13,6 +13,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  appBar: {
+    // margin: 0,
+    // padding: 0,
+    // position: "relative"
+  },
   gridContainer: {
     alignItems: "center",
     justifyContent: "space-between",
@@ -27,7 +32,7 @@ export default function Nav(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="relative">
+      <AppBar className={classes.appBar}>
         <Toolbar>
           <Grid container className={classes.gridContainer}>
             <Grid item>
