@@ -1,27 +1,33 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
 
 
 const useStyles = makeStyles((theme) => ({
-  slider: {
-    height: "80vh",
+  imgContainer: {
+    position: "relative"
   },
-  currentSlide: {
-    height: "80%",
-  }
+  blob: {
+    width: "100%",
+  },
+  main: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    // transform: t
+  },
 }));
 
 export default function Block1(props) {
   const classes = useStyles();
 
-  console.log(props.block_data)
-
   const blob = props.block_data.img["1blob.svg"];
   const main = props.block_data.img["1computer.svg"];
 
   return (
-    <div>
-    d
-    </div>
+    <Container>
+      <img className={classes.blob} src={blob} />
+      <img className={classes.main} src={main} />
+    </Container>
   )
 }

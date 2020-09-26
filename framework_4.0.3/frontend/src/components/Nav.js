@@ -27,7 +27,7 @@ export default function Nav(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="relative">
         <Toolbar>
           <Grid container className={classes.gridContainer}>
             <Grid item>
