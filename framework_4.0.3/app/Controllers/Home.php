@@ -1,24 +1,9 @@
 <?php namespace App\Controllers;
 use CodeIgniter\Controller;
 
-// Allow CORS between localhost:3000 and localhost:8080
-header('Access-Control-Allow-Origin: *');
-header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-$method = $_SERVER['REQUEST_METHOD'];
-if($method == "OPTIONS") {
-	die();
-}
-// Remove the above
-
 class Home extends Controller
 {
 	public function index()
-	{
-		return view('home');
-	}
-
-	public function data()
 	{
 		function getImgUrlsFromFold($folder)
 		{
@@ -32,8 +17,10 @@ class Home extends Controller
 
 		$company = "medweb";
 		$logo = base_url('assets/img/logo.svg');
-
 		$content = [
+			"meta" => [
+				["name" => "", "content" => ""],
+			],
 			"title" => $company,
 			"logo" => $logo,
 			"content_blocks" => [
@@ -43,7 +30,9 @@ class Home extends Controller
 			],
 		];
 
-		return $this->response->setJSON($content);
+		// todo: esc here, not in the html - https://codeigniter4.github.io/CodeIgniter4/outgoing/view_renderer.html
+		return view('home', $content);
+
 	}
 
 }
