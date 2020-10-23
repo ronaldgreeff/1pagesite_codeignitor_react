@@ -5,6 +5,7 @@ class Home extends Controller
 {
 	public function index()
 	{
+		// todo: move to utils
 		function getImgUrlsFromFold($folder)
 		{
 			$base_img_dir = ('assets/img/');
@@ -15,14 +16,11 @@ class Home extends Controller
 			return $l;
 		}
 
-		$company = "medweb";
-		$logo = base_url('assets/img/logo.svg');
+
 		$content = [
-			"meta" => [
-				["name" => "", "content" => ""],
-			],
-			"title" => $company,
-			"logo" => $logo,
+			"title" => "medweb",
+			"descr" => "",
+			"logo" => base_url('assets/img/logo.svg'),
 			"content_blocks" => [
 				["title" => "Experts in med/web", "desc" => "build experiences between clinics and patients", "img" => getImgUrlsFromFold('content1')],
 				["title" => "Built around your clinic", "desc" => "built around how you work", "img" => getImgUrlsFromFold('content2')],
@@ -31,8 +29,8 @@ class Home extends Controller
 		];
 
 		// todo: esc here, not in the html - https://codeigniter4.github.io/CodeIgniter4/outgoing/view_renderer.html
-		return view('home', $content);
-
+		echo view('templates\header', ["title" => "medweb"]);
+		echo view('home', $content);
+		echo view('templates\footer');
 	}
-
 }
