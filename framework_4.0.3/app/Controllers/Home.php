@@ -26,7 +26,7 @@ class Home extends Controller
 			$files = scandir($base_img_dir.$folder);
 			$l = array();
 			foreach ($files as $file)
-				$l[$file] = base_url($base_img_dir.$folder.$file);
+				$l[$file] = base_url($base_img_dir.$folder.'/'.$file);
 			return $l;
 		}
 
