@@ -13,6 +13,6 @@
 	<body>
 		<?= $this->include('includes\navbar') ?>
 		<?= $this->renderSection('content') ?>
-		<?= $this->include('templates\footer') ?>
+		<?= $this->include('includes\footer') ?>
 	</body>
 </html>
