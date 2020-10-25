@@ -16,7 +16,6 @@ class Home extends Controller
 			return $l;
 		}
 
-
 		$content = [
 			"content_blocks" => [
 				["title" => "Experts in med/web", "desc" => "build experiences between clinics and patients", "img" => getImgUrlsFromFold('content1')],
@@ -26,8 +25,6 @@ class Home extends Controller
 		];
 
 		// todo: esc here, not in the html - https://codeigniter4.github.io/CodeIgniter4/outgoing/view_renderer.html
-		echo view('templates\header');
 		echo view('home', $content);
-		echo view('templates\footer');
 	}
 }
