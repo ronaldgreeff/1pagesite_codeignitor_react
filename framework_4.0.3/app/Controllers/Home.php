@@ -5,26 +5,29 @@ class Home extends Controller
 {
 	public function index()
 	{
-		// todo: move to utils
-		function getImgUrlsFromFold($folder)
-		{
-			$base_img_dir = ('assets/img/');
-			$files = scandir($base_img_dir.$folder);
+		function getHomeContentImgUrl($i) {
+			$base_dir = ('assets/img/home/');
 			$l = array();
-			foreach ($files as $file)
-				$l[$file] = base_url($base_img_dir.$folder.'/'.$file);
+			$l['d'] = base_url($base_dir.'/d'.$i.'.svg');
+			$l['m'] = base_url($base_dir.'/m'.$i.'.svg');
 			return $l;
 		}
 
 		$content = [
 			"content_blocks" => [
-				["title" => "Experts in med/web", "desc" => "build experiences between clinics and patients", "img" => getImgUrlsFromFold('content1')],
-				["title" => "Built around your clinic", "desc" => "built around how you work", "img" => getImgUrlsFromFold('content2')],
-				["title" => "Happy, healthy people", "desc" => "The ultimate goal", "img" => getImgUrlsFromFold('content3')],
+				["title" => "Experts in med/web",
+					"desc" => "build experiences between clinics and patients",
+					"imgs" => getHomeContentImgUrl(1)],
+				["title" => "Built around your clinic",
+					"desc" => "built around how you work",
+					"imgs" => getHomeContentImgUrl(2)],
+				["title" => "Happy, healthy people",
+					"desc" => "The ultimate goal",
+					"imgs" => getHomeContentImgUrl(3)],
 			],
 		];
 
-		// todo: esc here, not in the html - https://codeigniter4.github.io/CodeIgniter4/outgoing/view_renderer.html
 		echo view('home', $content);
+
 	}
 }
