@@ -10,6 +10,13 @@ class Home extends Controller
 			$l = array();
 			$l['d'] = base_url($base_dir.'/d'.$i.'.svg');
 			$l['m'] = base_url($base_dir.'/m'.$i.'.svg');
+
+			// todo: main background image, optional background and foreground
+			// $l['background'] = base_url($base_dir.'/background'.$i.'.svg');
+			// $l['foreground'] = base_url($base_dir.'/foreground'.$i.'.svg');
+			// $l['main_desktop'] = base_url($base_dir.'/main_desktop'.$i.'.svg');
+			// $l['main_mobile'] = base_url($base_dir.'/main_mobile'.$i.'.svg');
+
 			return $l;
 		}
 
