@@ -1,6 +1,11 @@
 <?php namespace App\Controllers;
 
 use CodeIgniter\Controller;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require __DIR__.'\..\..\vendor\autoload.php';
 
 class Contact extends Controller
 {
@@ -12,7 +17,8 @@ class Contact extends Controller
 
   public function send($value='')
   {
-    $email = \Config\Services::email();
+    $email = new PHPMailer(true);
+    // $email = \Config\Services::email();
 
     $email->setFrom('from@a.com', 'From Name');
     $email->setTo('to@b.com', 'To Name');
