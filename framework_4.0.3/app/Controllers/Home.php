@@ -34,10 +34,6 @@ class Home extends Controller
 			],
 		];
 
-		$db = \Config\Database::connect();
-		$query = $db->query('SELECT name, title, email FROM my_table');
-		$results = $query->getResult();
-
 		echo view('home', $content);
 
 	}
