@@ -16,7 +16,7 @@ class Contact extends Controller
     return view('contact');
   }
 
-  public function send($value='')
+  public function send()
   {
     $mail = new PHPMailer(true);
     $mail->isSMTP();
@@ -26,12 +26,11 @@ class Contact extends Controller
     $mail->Host = $_ENV['mail.Host'];
     $mail->Port = 587;
     $mail->SMTPOptions = array(
-        'ssl' => array(
-            'verify_peer' => false,
-            'verify_peer_name' => false,
-            'allow_self_signed' => true
-        )
-    );
+      'ssl' => array(
+          'verify_peer' => false,
+          'verify_peer_name' => false,
+          'allow_self_signed' => true
+    ));
     $mail->isHTML(true);
 
     $mail->Username = $_ENV['mail.Username'];
