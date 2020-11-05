@@ -40,11 +40,20 @@ class Contact extends Controller
     $mail->addAddress($_ENV['mail.To']);
     $mail->setFrom($_ENV['mail.From']);
 
+    $enquirer_full_name = $this->request->getVar('enquirer_full_name');
     $enquirer_email = $this->request->getVar('enquirer_email');
     $enquirer_phone = $this->request->getVar('enquirer_phone');
     $enquirer_message = $this->request->getVar('enquirer_message');
 
-    $mail->MsgHTML("{$enquirer_email}<br>{$enquirer_phone}<br><br>{$enquirer_message}");
+    $mail->MsgHTML("
+      {$enquirer_full_name}
+      <br><br>
+      {$enquirer_message}
+      <br><br>
+      {$enquirer_phone}
+      <br>
+      {$enquirer_email}
+      ");
 
     $mail->send();
   }
