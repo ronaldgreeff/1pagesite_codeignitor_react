@@ -5,5 +5,5 @@
   <?= $this->include('includes\home_content') ?>
   <?= $this->include('includes\portfolio') ?>
   <?= $this->include('includes\cta') ?>
-  <?= $this->include('includes\contact') ?>
+  <?= $this->include('includes\contact_form') ?>
 <?= $this->endSection() ?>
