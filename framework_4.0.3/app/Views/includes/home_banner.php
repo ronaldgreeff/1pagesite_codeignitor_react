@@ -1,30 +1,30 @@
-<div class="section no-pad-bot full_page_section home_banner_section flex_align_center" id="index-banner">
-  <div class="container home_banner_container">
+<div class="section no-pad-bot full-page-section home-banner-section flex-align-center" id="index-banner">
+  <div class="container home-banner-container">
     <br><br>
     <div class="row center">
       <div class="col s12">
-        <img src=<?= base_url('assets/img/logo.svg') ?> class="home_banner_logo" />
+        <img src=<?= base_url('assets/img/logo.svg') ?> class="home-banner-logo" />
       </div>
-      <div class="col s12">
-        <?php foreach (["medical", "website", "design"] as $v): ?>
-          <p class="home_banner_text"><?php echo $v; ?></p>
-        <?php endforeach; ?>
+      <div class="col s12 home-banner-text fs-l">
+        <p>medical</p>
+        <p>website</p>
+        <p class="">design &</p>
+        <p class="fs-m">development</p>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .home_banner_section {
+  .home-banner-section {
     background: grey;
   }
-  .home_banner_logo {
+  .home-banner-logo {
     width: 100%;
     align-items: center;
   }
-  .home_banner_text {
+  .home-banner-text {
     line-height: 0.2;
-    font-size: 10vh;
     font-family: UbuntuTitling-Bold;
   }
 </style>
