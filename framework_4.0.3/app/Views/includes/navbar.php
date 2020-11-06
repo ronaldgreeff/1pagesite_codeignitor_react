@@ -14,7 +14,16 @@
       <?= $this->include('includes\navs') ?>
     </ul>
 
-    <a href="#" data-target="nav-mobile" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
+    <a href="#" data-target="nav-mobile" class="right sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
 
   </div>
 </nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems);
+  });
+</script>
