@@ -1,4 +1,4 @@
-<div class="section no-pad-bot full-page-section home-banner-section flex-align-center" id="index-banner">
+<div class="section no-pad-bot full-page-section home-banner-section flex-align-center" >
   <div class="container home-banner-container">
     <br><br>
     <div class="row center">

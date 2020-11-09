@@ -2,6 +2,7 @@
 
 <?= $this->section('content') ?>
   <?= $this->include('includes\home_banner') ?>
+  <?= $this->include('includes\intro') ?>
   <?= $this->include('includes\home_content') ?>
   <?= $this->include('includes\portfolio') ?>
   <?= $this->include('includes\cta') ?>

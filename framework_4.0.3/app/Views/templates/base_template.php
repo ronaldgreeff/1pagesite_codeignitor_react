@@ -12,8 +12,10 @@
 
 	</head>
 	<body>
-		<?= $this->include('includes\navbar') ?>
-		<?= $this->renderSection('content') ?>
-		<?= $this->include('includes\footer') ?>
+		<div id="page" class="site">
+			<?= $this->include('includes\header') ?>
+			<?= $this->renderSection('content') ?>
+			<?= $this->include('includes\footer') ?>
+		</div>
 	</body>
 </html>

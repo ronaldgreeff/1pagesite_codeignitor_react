@@ -8,8 +8,11 @@
        url('fonts/UbuntuTitling-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
-.full-page-section {
-  height: 100vh;
+.content-section {
+  position: relative;
+  width: 100%;
+  max-height: 90vh;
+  min-height: 56vh;
 }
 .flex-align-center {
   display: flex;
