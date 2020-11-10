@@ -5,7 +5,7 @@
 
       <a id="logo-container" href="/" class="brand-logo">
         <img id="nav-logo" src=<?= base_url('assets/img/logo.svg') ?> />
-        <p class="corp-font">medweb</p>
+        <p class="ubuntu-titling-bold corp-font">medweb</p>
       </a>
 
       <ul class="right hide-on-med-and-down">
@@ -23,25 +23,3 @@
     </div>
   </nav>
 </header>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var options = '';
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
-</script>
-
-<style>
-  .corp-font {
-    margin: 0;
-    font-size: 5vw;
-    font-family: UbuntuTitling-Bold;
-  }
-  #logo-container {
-    display: flex;
-  }
-  #nav-logo {
-    width: 50px;
-  }
-</style>

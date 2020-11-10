@@ -9,6 +9,7 @@
 		<!-- Materialize CSS todo: use local not cdn -->
     <link rel="stylesheet" href="assets/css/materialize.min.css">
     <script src="assets/js/materialize.min.js"></script>
+		<script src="assets/js/materialize_load.js"></script>
 
 	</head>
 	<body>

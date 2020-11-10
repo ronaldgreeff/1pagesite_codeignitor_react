@@ -7,23 +7,37 @@
        url('fonts/UbuntuTitling-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('fonts/UbuntuTitling-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
-.content-section {
-  position: relative;
-  width: 100%;
-  max-height: 90vh;
-  min-height: 56vh;
+.ubuntu-titling-bold {
+  font-family: UbuntuTitling-Bold;
 }
-.flex-align-center {
+.flex-middle-center {
   display: flex;
   align-items: center;
 }
-.fs-l {
-  font-size: 20vw;
+.carousel.carousel-slider {
+  height: 100vh;
 }
-.fs-m {
-  font-size: 14vw;
+/* header */
+.corp-font {
+  margin: 0;
+  font-size: 4vw;
 }
-.fs-s {
-  font-size: 10vw;
+#logo-container {
+  display: flex;
 }
+#nav-logo {
+  width: 50px;
+}
+/* home banner */
+.full-page-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.home-banner-text {}
+.content-block-img {
+  width: 50vw;
+  max-height: 300px;
+  margin: 10% 0 10% 0;
+}
+/* intro */
