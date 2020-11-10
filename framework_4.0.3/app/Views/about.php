@@ -10,7 +10,7 @@
         <br><br>
 
         <?= $this->include('includes\quote');
-        echo makeQuote(
+        makeQuote(
           $content = 'well hee haw',
           $sub_content = 'gee',
           $button_link = 'test/',
