@@ -3,9 +3,8 @@
 
     <div class="nav-wrapper container">
 
-      <a id="logo-container" href="/" class="brand-logo">
-        <img id="nav-logo" src=<?= base_url('assets/img/logo.svg') ?> />
-        <p class="ubuntu-titling-bold corp-font">medweb</p>
+      <a id="logo-container" href="/" class="brand-logo flex-middle-center">
+        <img id="nav-logo" class="" src=<?= base_url('assets/img/text_logo.svg') ?> />
       </a>
 
       <ul class="right hide-on-med-and-down">

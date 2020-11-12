@@ -13,20 +13,18 @@
 .flex-middle-center {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .carousel.carousel-slider {
   height: 100vh;
 }
 /* header */
-.corp-font {
-  margin: 0;
-  font-size: 4vw;
-}
 #logo-container {
   display: flex;
+  height: 100%;
 }
 #nav-logo {
-  width: 50px;
+  height: 80%;
 }
 /* home banner */
 .full-page-section {
@@ -41,3 +39,10 @@
   margin: 10% 0 10% 0;
 }
 /* intro */
+
+/* quote*/
+.quote-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}

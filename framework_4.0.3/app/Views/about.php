@@ -15,6 +15,7 @@
           $sub_content = 'gee',
           $button_link = 'test/',
           $button_text = 'test',
+          $background_img = '',
         ); ?>
 
         </div>

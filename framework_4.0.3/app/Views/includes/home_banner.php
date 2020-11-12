@@ -4,7 +4,7 @@
     <!-- logo and main description -->
     <div class="row center">
       <div class="col s12 l6 home-banner-text">
-        <h1>Medical website design & development</h1>
+        <img src=<?= base_url('assets/img/medical_website_design.svg') ?> alt="medical website and development" />
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <?= $this->extend('templates\base_template') ?>
 
-<?= $this->section('content') ?>
+<?= $this->section('home') ?>
   <section> <?= $this->include('includes\home_banner') ?> </section>
   <section> <?= $this->include('includes\intro') ?> </section>
   <section> <?= $this->include('includes\home_content') ?> </section>
