@@ -1,12 +1,10 @@
-<div class="section no-pad-bot flex-middle-center">
-  <div class="container">
-    <?= $this->include('includes/quote');
-    echo makeQuote(
-      $content = 'Since inception, MedWeb has been delivering {work that powers <strong>game-changing companies and global influencers.</strong>}',
-      $sub_content = '{Our core strategic engagements in branding, platform design, campaigns, and content creation consistently drive desired outcomes and awareness.}',
-      $button_link = '/about',
-      $button_text = 'See who we are',
-      $background_img = 'assets/img/logo_design.svg'
-    ); ?>
+<!-- intro / hero / welcome -->
+<div class="intro-header">
+  <div class="intro-content">
+    <div class="intro-text">
+      <h1 class="Connect to your patients."></h1>
+      <p class="paragraph bigger">Fast, convenient access to your services is vital in today's technology driven society. That's where we come in.</p>
+    </div>
+    <a class="waves-effect waves-light btn">LEARN MORE</a>
   </div>
 </div>

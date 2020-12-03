@@ -1,10 +1,22 @@
 <?= $this->extend('templates\base_template') ?>
 
 <?= $this->section('home') ?>
-  <section> <?= $this->include('includes\home_banner') ?> </section>
-  <section> <?= $this->include('includes\intro') ?> </section>
-  <section> <?= $this->include('includes\home_content') ?> </section>
-  <section> <?= $this->include('includes\portfolio') ?> </section>
-  <section> <?= $this->include('includes\cta') ?> </section>
-  <section> <?= $this->include('includes\contact_form') ?> </section>
+
+  <section id="intro-section">
+    <?= $this->include('includes\intro') ?>
+    <?= $this->include('includes\motto') ?>
+    <?= $this->include('includes\slider') ?>
+  </section>
+
+  <section id="content-section">
+    <h2 class="section-title">PORTFOLIO</h2>
+    <?= $this->include('includes\portfolio') ?>
+  </section>
+
+  <section id="contact-section">
+    <?= $this->include('includes\cta') ?>
+    <h2 class="section-title">CONTACT</h2>
+    <?= $this->include('includes\contact_form') ?>
+  </section>
+
 <?= $this->endSection() ?>
