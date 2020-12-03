@@ -1,7 +1,7 @@
 <div class="contact-wrapper">
   <div class="columns">
 
-    <div class="column">
+    <div class="column contact-form">
       <form method="post" action="<?php echo base_url('contact/send') ?>">
         <div class="input-field col s12">
           <input id="enquirer_full_name" name="enquirer_full_name" type="text" class="validate">
