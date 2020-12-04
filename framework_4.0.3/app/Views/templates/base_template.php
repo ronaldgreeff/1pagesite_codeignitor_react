@@ -15,7 +15,9 @@
 	<body>
 		<div id="page" class="site">
 			<?= $this->include('includes/header') ?>
-			<?= $this->renderSection('home') ?>
+				<div class="valign center">
+					<?= $this->renderSection('home') ?>
+				</div>
 			<?= $this->include('includes/footer') ?>
 		</div>
 	</body>

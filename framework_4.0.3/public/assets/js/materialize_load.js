@@ -8,5 +8,5 @@ docReady(function() {
     document.querySelectorAll('.sidenav'), {});
 
   let carousel = M.Carousel.init(
-    document.querySelectorAll('.carousel'), {});
+    document.querySelectorAll('.carousel'), {fullWidth: true});
 });

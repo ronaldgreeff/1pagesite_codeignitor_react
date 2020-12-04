@@ -10,3 +10,77 @@
 .ubuntu-titling-bold {
   font-family: UbuntuTitling-Bold;
 }
+
+section {
+  /* margin: 10vh 0 10vh 0; */
+}
+
+.intro-header {
+  /* background-image: url("../img/home/phones.png"); */
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#nav-logo {
+  height: 80%;
+}
+
+.intro-header {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  margin: 5vh 0 5vh 0;
+  height: 90vw;
+}
+
+.carousel {
+  height: 100vh !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-block-img {
+  max-width: 50vw;
+  max-height: 50vh;
+  /* margin: 10% 0 10% 0; */
+}
+
+.portf-img {
+  max-width: 100%;
+}
+
+/* #pc1 {
+  background-image: url("../img/home/design.png");
+  background-position: right;
+}
+#pc2 {
+  background-image: url("../img/home/development.png");
+  background-position: left;
+}
+#pc3 {
+  background-image: url("../img/home/systems.png");
+  background-position: right;
+}
+#pc1, #pc2, #pc3 {
+  background-repeat: no-repeat;
+} */
+
+/* .portf-item {
+  margin: 10vh 0 10vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.portf-text {
+  width: 300px;
+} */
