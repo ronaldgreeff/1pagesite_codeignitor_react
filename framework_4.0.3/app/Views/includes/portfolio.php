@@ -17,10 +17,16 @@
 
     <div id="pc2" class="portf-item">
       <div class="row">
+        <div class="col s12 show-on-small hide-on-med-and-up">
+          <div class="portf-text">
+            <h3 class="portf-heading">Development</h3>
+            <p class="portf-para">If you're aim is to produce content, we advise on the best CMS for your needs and build you a customised solution that you can manage.</p>
+          </div>
+        </div>
         <div class="col s12 m6">
           <img src="<?= base_url('assets/img/home/development.png') ?>" alt="" class="portf-img"/>
         </div>
-        <div class="col s12 m6">
+        <div class="col m6 hide-on-small-only">
           <div class="portf-text">
             <h3 class="portf-heading">Development</h3>
             <p class="portf-para">If you're aim is to produce content, we advise on the best CMS for your needs and build you a customised solution that you can manage.</p>

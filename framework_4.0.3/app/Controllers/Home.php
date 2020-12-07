@@ -14,13 +14,13 @@ class Home extends Controller
 		$content = [
 			"content_blocks" => [
 				["title" => "We <b>bridge the gap</b> between clinical and digital",
-					"desc" => "We couple clinics to fast, stable patient interfaces.",
+					"desc" => "Helping you deliver exemplary patient services online.",
 					"imgs" => getImgDir(1)],
-				["title" => "Solutions built around how <b>you</b> work",
-					"desc" => "Your clinic is unique. Your digital presence should reflect that and align to <b>your</b> processes.",
+				["title" => "We tailor solutions to how <b>you</b> work",
+					"desc" => "",
 					"imgs" => getImgDir(2)],
-				["title" => "We help you <b>deliver</b>.",
-					"desc" => "Drive desired outcomes through a strong online presence.",
+				["title" => "We deliver satisfaction.",
+					"desc" => "uniqueness/And drive desired outcomes through a strong online presence.",
 					"imgs" => getImgDir(3)],
 			],
 		];
