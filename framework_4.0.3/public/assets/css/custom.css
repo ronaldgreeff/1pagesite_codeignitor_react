@@ -7,8 +7,21 @@
        url('fonts/UbuntuTitling-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('fonts/UbuntuTitling-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
 .ubuntu-titling-bold {
   font-family: UbuntuTitling-Bold;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: #2F455C;
+}
+
+.intro-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.intro-para {
+  font-size: 2rem;
 }
 
 section {
@@ -19,6 +32,9 @@ section {
   /* background-image: url("../img/home/phones.png"); */
   background-repeat: no-repeat;
   background-position: top;
+}
+.intro-btn {
+  margin-top: 10vh;
 }
 
 #logo-container {
@@ -31,28 +47,27 @@ section {
 }
 
 .intro-header {
-  height: 80vh;
+  height: 74vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .slider-wrapper {
-  margin: 5vh 0 5vh 0;
-  height: 90vw;
+  height: 70vh;
 }
-
 .carousel {
-  height: 100vh !important;
+  height: 100% !important;
+}
+.carousel-item {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .content-block-img {
-  max-width: 50vw;
-  max-height: 50vh;
-  /* margin: 10% 0 10% 0; */
+  /* max-width: 50vw; */
+  max-height: 400px;
+  margin: 5vh 0 5vh 0;
 }
 
 .portf-img {
