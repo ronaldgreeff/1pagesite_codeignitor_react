@@ -1,5 +1,5 @@
 <header>
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav class="lighten-1" role="navigation">
 
     <div id="nav-menu" class="nav-wrapper container">
 

@@ -17,10 +17,10 @@ class Home extends Controller
 					"desc" => "Helping you deliver exemplary patient services online.",
 					"imgs" => getImgDir(1)],
 				["title" => "We tailor solutions to how <b>you</b> work",
-					"desc" => "",
+					"desc" => "Not the other way around.",
 					"imgs" => getImgDir(2)],
 				["title" => "We deliver satisfaction.",
-					"desc" => "uniqueness/And drive desired outcomes through a strong online presence.",
+					"desc" => "And drive desired outcomes through a strong online presence.",
 					"imgs" => getImgDir(3)],
 			],
 		];

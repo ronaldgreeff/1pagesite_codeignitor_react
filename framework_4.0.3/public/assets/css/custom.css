@@ -27,7 +27,9 @@ h1, h2, h3, h4, h5, h6, p {
 section {
   /* margin: 10vh 0 10vh 0; */
 }
-
+nav {
+  background-color: CornflowerBlue !important;
+}
 .intro-header {
   /* background-image: url("../img/home/phones.png"); */
   background-repeat: no-repeat;
@@ -64,6 +66,10 @@ section {
   align-items: center;
 }
 
+blockquote {
+  border-left: 10px solid CornflowerBlue !important;
+}
+
 .content-block-img {
   /* max-width: 50vw; */
   max-height: 400px;
@@ -74,6 +80,30 @@ section {
   max-width: 100%;
 }
 
+.spacing-8 {
+  margin-top: 8rem;
+}
+.spacing-5 {
+  margin-top: 5rem;
+}
+.spacing-4 {
+  margin-top: 4rem;
+}
+.spacing-3 {
+  margin-top: 3rem;
+}
+.spacing-2 {
+  margin-top: 2rem;
+}
+.spacing-1 {
+  margin-top: 1rem;
+}
+.contact-map {
+  max-width: 80vw;
+}
+#footer-logo {
+  max-height: 20px;;
+}
 /* #pc1 {
   background-image: url("../img/home/design.png");
   background-position: right;

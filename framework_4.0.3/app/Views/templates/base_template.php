@@ -6,6 +6,7 @@
 		<meta name="description" content="medical website design and development">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="assets/css/custom.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!-- Materialize CSS todo: use local not cdn -->
     <link rel="stylesheet" href="assets/css/materialize.min.css">
     <script src="assets/js/materialize.min.js"></script>

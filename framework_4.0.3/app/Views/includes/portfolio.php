@@ -1,7 +1,7 @@
 <div class="portf-wrapper">
   <div class="container center">
 
-    <div id="pc1" class="portf-item">
+    <div id="pc1" class="portf-item spacing-5">
       <div class="row">
         <div class="col s12 m6">
           <div class="portf-text">
@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div id="pc2" class="portf-item">
+    <div id="pc2" class="portf-item spacing-5">
       <div class="row">
         <div class="col s12 show-on-small hide-on-med-and-up">
           <div class="portf-text">
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <div id="pc3" class="portf-item">
+    <div id="pc3" class="portf-item spacing-5">
       <div class="row">
         <div class="col s12 m6">
           <div class="portf-text">
